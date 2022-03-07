@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Sora';
+    text-transform: lowercase;
 }
 
 :root {
@@ -69,7 +70,6 @@ padding: 5rem 5%;
     align-items:flex-start;
     justify-content: space-between;
     
-
 }
 
 .nav__list-item{
@@ -141,6 +141,17 @@ color: var(--green);
 .project__list-item--link {
     width: 100%;
 }
+
+.project__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+    justify-content: center;
+    text-align: center;
+
+}
+
 /*footer*/
 main {
     min-height: 90vh;
