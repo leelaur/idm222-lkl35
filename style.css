@@ -68,11 +68,13 @@ padding: 5rem 5%;
     width: 100%;
     align-items:flex-start;
     justify-content: space-between;
+    
 
 }
 
 .nav__list-item{
     list-style: none;
+    padding-bottom: 1.5rem;
 }
 
 .nav__list-item--color {
@@ -86,8 +88,9 @@ padding: 5rem 5%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    height: 70vh;
+    height: 60vh;
     justify-content: center;
+
 }
 
 .intro__title {
@@ -98,7 +101,7 @@ padding: 5rem 5%;
 /*projects*/
 .project {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
 }
 .project__list {
     list-style-type: none;
@@ -120,6 +123,9 @@ padding: 5rem 5%;
    
 }
 
+.project__list-items :hover {
+color: var(--green);
+}
 .project__list-text {
     padding: 1rem 0 0 1rem;
     color: var(--white);
@@ -132,7 +138,9 @@ padding: 5rem 5%;
         gap: 3rem ; 
     }
 }
-
+.project__list-item--link {
+    width: 100%;
+}
 /*footer*/
 main {
     min-height: 90vh;
@@ -142,15 +150,20 @@ footer {
     background-color: var(--off-black);
     display:flex;
     width: 100%;
-    height:150px;
+    height:200px;
     align-items:flex-start;
     justify-content: space-between;
-}
-.footer__list-item {
-    color: var(--white);
-    list-style:none;
+    padding: 2rem 5%;
 }
 
+.footer__list-item {
+    color: var(--white);
+    list-style: none;
+}
+
+.footer__nav-list-item {
+    padding-bottom:1rem;
+}
 .footer__contact {
     display: flex;
     flex-direction: column;
@@ -159,6 +172,32 @@ footer {
 
 .footer__social{
     display: flex;
-    flex-direction: column;
-   align-items: flex-end; 
+    flex-direction: row;
+   justify-items: center;
+   justify-content: flex-end;
+}
+
+.social__img--size {
+    height: 50%;
+}
+.social__list-item {
+    color: var(--green);
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+}
+.footer__list-item-social {
+    display: flex;
+    justify-content: flex-end;
+    color: var(--white);
+    list-style: none;
+}
+
+.footer__contact--text { 
+    color: var(--white);
+    align-self: flex-end;
+}
+
+.footer__hello {
+    margin-bottom: 1rem;
 }
