@@ -31,9 +31,9 @@
     font-display: swap;
 }
 @font-face {
-    font-family: 'Sora-SemiBold';
-    src: url('fonts/Sora-SemiBold.woff2') format('woff2'),
-        url('fonts/Sora-SemiBold.woff') format('woff');
+    font-family: 'Sora-Medium';
+    src: url('fonts/Sora-Medium.woff2') format('woff2'),
+        url('fonts/Sora-Medium.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -101,35 +101,41 @@ padding: 5rem 5%;
 /*projects*/
 .project {
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
+    margin-top: 2rem;
 }
+
 .project__list {
     list-style-type: none;
     display: grid;
     grid-template-columns:500px 500px;
     grid-template-rows: auto auto;
     gap: 10%;
-    align-content: center;
+    justify-content: center;
     margin-top: 2rem;
+    margin-bottom: 5rem;
+    text-decoration: none;
     
-    
+}
+
+.project__list-items :hover {
+    color: var(--green);
 }
 .project__list-items {
     display: grid;
     justify-content: flex-start;
     background-color: var(--off-black);
-    height:300px;
+    padding: 0 2rem;
+    height:350px;
     width: 100%;
-   
 }
 
-.project__list-items :hover {
-color: var(--green);
-}
+
 .project__list-text {
-    padding: 1rem 0 0 1rem;
+    /* padding: 1rem 0 0 1rem; */
     color: var(--white);
-    font-size: 65px;
+    font-size: 60px;
+    font-family: 'Sora-Bold';
 }
 @media screen and (max-width: 1100px) {
     .project__list {
@@ -140,13 +146,14 @@ color: var(--green);
 }
 .project__list-item--link {
     width: 100%;
+    height:100%
 }
 
 .project__heading {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 60vh;
+    height: 70vh;
     justify-content: center;
     text-align: center;
 
@@ -154,7 +161,7 @@ color: var(--green);
 
 /*footer*/
 main {
-    min-height: 90vh;
+    min-height: 70vh;
   }
 
 footer {
@@ -164,7 +171,7 @@ footer {
     height:200px;
     align-items:flex-start;
     justify-content: space-between;
-    padding: 2rem 5%;
+    padding: 3rem 5%;
 }
 
 .footer__list-item {
@@ -209,6 +216,16 @@ footer {
     align-self: flex-end;
 }
 
+.footer__contact--mail { 
+    color: var(--white);
+    text-decoration: none;
+}
+
+.footer__contact--mail:hover { 
+    color: var(--green);
+    text-decoration: underline;
+}
 .footer__hello {
     margin-bottom: 1rem;
+    size: 10px;
 }
