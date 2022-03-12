@@ -85,45 +85,6 @@ padding: 5rem 5%;
     color: var(--green);
     text-decoration: none;
 }
-/*mobile menu navigation*/
-.mobile-menu {
-    display: flex;
-    justify-content: center;
-}
-.mobile-menu__icon--open, .mobile-menu__icon--close  {
-    position: absolute; 
-    top: 0;
-    right: 0;
-    padding: 4.5rem 5% 0 0;
-    width: 90px;
-}
-
-
-/* .mobile-nav{
-    align-items: flex-start;
-} */
-
-.mobile-nav__list {
-    text-align: center;
-   
-}
-
-.mobile-nav__list-item {
-    list-style: none;
-    font-size: 48pt;
-    line-height: 1.5;
-    padding: 10rem 1rem 0;
-}
-
-@media screen and (max-width: 1100px) {
-    .mobile-menu__icon {
-        opacity: 100;
-    }
-    .nav__list-item {
-        opacity: 0;
-    }
-}
-
 
 /*hello my name is...*/
 .intro {
