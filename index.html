@@ -60,6 +60,18 @@
             </div>
         </main>
     </div>
+    <!--mobile menu-->
+    <div class= "mobile-menu">
+        <img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIKdmlld0JveD0iMCAwIDE3MiAxNzIiCnN0eWxlPSIgZmlsbDojMDAwMDAwOyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgZm9udC1mYW1pbHk9Im5vbmUiIGZvbnQtd2VpZ2h0PSJub25lIiBmb250LXNpemU9Im5vbmUiIHRleHQtYW5jaG9yPSJub25lIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PHBhdGggZD0iTTAsMTcydi0xNzJoMTcydjE3MnoiIGZpbGw9Im5vbmUiPjwvcGF0aD48ZyBmaWxsPSIjYmFmYzAwIj48cGF0aCBkPSJNMTQuMzMzMzMsMzUuODMzMzN2MTQuMzMzMzNoMTQzLjMzMzMzdi0xNC4zMzMzM3pNMTQuMzMzMzMsNzguODMzMzN2MTQuMzMzMzNoMTQzLjMzMzMzdi0xNC4zMzMzM3pNMTQuMzMzMzMsMTIxLjgzMzMzdjE0LjMzMzMzaDE0My4zMzMzM3YtMTQuMzMzMzN6Ij48L3BhdGg+PC9nPjwvZz48L3N2Zz4=" class="mobile-menu__icon mobile-menu__icon--open" id="hamburger-open"/>
+        <img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIKdmlld0JveD0iMCAwIDE3MiAxNzIiCnN0eWxlPSIgZmlsbDojMDAwMDAwOyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgZm9udC1mYW1pbHk9Im5vbmUiIGZvbnQtd2VpZ2h0PSJub25lIiBmb250LXNpemU9Im5vbmUiIHRleHQtYW5jaG9yPSJub25lIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PHBhdGggZD0iTTAsMTcydi0xNzJoMTcydjE3MnoiIGZpbGw9Im5vbmUiPjwvcGF0aD48ZyBmaWxsPSIjYmFmYzAwIj48cGF0aCBkPSJNMzEuNDk3NSwyMS43MTVsLTkuNzgyNSw5Ljc4MjVsNTQuNTAyNSw1NC41MDI1bC01NC44MjUsNTQuOTMyNWw5LjY3NSw5LjY3NWw1NC45MzI1LC01NC44MjVsNTQuODI1LDU0LjgyNWw5Ljc4MjUsLTkuNzgyNWwtNTQuODI1LC01NC44MjVsNTQuNTAyNSwtNTQuNTAyNWwtOS43ODI1LC05Ljc4MjVsLTU0LjUwMjUsNTQuNTAyNXoiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg==" class="mobile-menu__icon mobile-menu__icon--close" id="hamburger-close"/>
+        <nav class="mobile-nav" id="menu">
+            <ul class="mobile-nav__list">
+                <li class="mobile-nav__list-item"> <a href="index.html" class="nav__list-item--color">home</a></li>
+                <li class="mobile-nav__list-item"><a href="about.html" class="nav__list-item--color">about</a> </li>
+                <li class="mobile-nav__list-item"><a href="resume.html" class="nav__list-item--color">resume</a></li>
+            </ul>
+        </nav>
+    </div>
     <footer>
         <div class="footer__menu">
             <nav class="footer__nav">
@@ -84,6 +96,25 @@
             </p>
         </div>
     </footer>
-    
 </body>
+<script>
+    const openMenu = document.getElementById('hamburger-open');
+    const closedMenu = document.getElementById ('hamburger-close');
+    const menu = document.getElementById('menu');
+    
+    menu.style.display = 'none';
+    closedMenu.style.display='none';
+
+    openMenu.addEventListener ('click', function () {
+        menu.style.display = 'block';
+        closedMenu.style.display = 'block';
+        openMenu.style.display= 'none';
+    });
+
+    closedMenu.addEventListener ('click', function () {
+        openMenu.style.display= 'block';
+        menu.style.display = 'none';
+    closedMenu.style.display='none';
+    });
+</script>
 </html>
