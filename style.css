@@ -111,7 +111,7 @@ padding: 5rem 5%;
 .project__list {
     list-style-type: none;
     display: grid;
-    grid-template-columns:500px 500px;
+    grid-template-columns:700px 700px;
     grid-template-rows: auto auto;
     gap: 10%;
     justify-content: center;
@@ -128,7 +128,6 @@ padding: 5rem 5%;
     background-color: var(--off-black);
     padding: 0 2rem;
     height:350px;
-    width: 100%;
 }
 
 
@@ -181,16 +180,22 @@ padding: 5rem 5%;
 .project__heading-img {
     width: 100%;
     position: absolute;
-    z-index: -100;
+    z-index: -200;
     object-fit: cover;
-    filter: grayscale(0.80);
     height: 40vh;
-
+    filter: grayscale(10);
+    transform: scale (0.7);
+    overflow: hidden;
 }
+/* all images for now*/
+.project__img {
+    width: 50px;
+}
+
 /*footer*/
 main {
     min-height: 70vh;
-  }
+}
 
 footer {
     background-color: var(--off-black);
