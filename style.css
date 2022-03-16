@@ -43,6 +43,14 @@
 padding: 5rem 5%;
 }
 
+/*font-sizes*/
+h3 {
+    font-size: 23px;
+}
+
+h5 {
+    font-size: 18px;;
+}
 /*Everything on the top*/
 .background-img {
     width: 100%;
@@ -141,7 +149,7 @@ padding: 5rem 5%;
 }
 
 .project__card--link {
-   width: 100%
+   text-decoration: none;
     
 }
 
@@ -185,12 +193,6 @@ padding: 5rem 5%;
     } */
     
 }
-.project__list-item--link {
-    width: 300px;
-    height: 200%;
-    text-decoration: none;
-
-}
 
 .project__heading {
     padding-top: 2rem;
@@ -217,6 +219,57 @@ padding: 5rem 5%;
     width: 50px;
 }
 
+/* resume*/
+.resume {
+    margin-top: 2rem;
+}
+.resume__name {
+    font-size: 28px;
+    /* text-align: center; */
+}
+.resume__paper {
+    display: flex;
+    flex-direction: column;
+}
+mark {
+    background-color: var(--green);
+    color: var(--black);
+}
+.resume__contact {
+    margin-top: 1rem;
+    /* text-align: center; */
+}
+.resume__contact--mail-black {
+    color: var(--black);
+    text-decoration: none;
+}
+
+.line {
+    display: block;
+    width:100%;
+    margin-top: 1rem;
+    border-bottom: 1px solid;
+}
+
+.resume__section { 
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    align-content: center;
+}
+
+.resume__content{
+    justify-content: flex-end;
+    padding-left:3rem;
+}
+
+
+.resume__btn {
+    background-color: var(--white);
+    color: var(--white);
+    text-decoration: none;
+}
 /*footer*/
 main {
     min-height: 70vh;
