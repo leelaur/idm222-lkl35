@@ -40,7 +40,7 @@
 }
 
 .wrapper {
-padding: 5rem 5%;
+padding: 5rem 10%;
 }
 
 /*Everything on the top*/
@@ -65,6 +65,7 @@ padding: 5rem 5%;
     text-decoration: none;
     color:var(--green);
     font-size: 30pt;
+    font-family: 'Sora-Bold';
 }
 /* header= menu,ll.*/
 .header { 
@@ -98,7 +99,9 @@ padding: 5rem 5%;
 
 .intro__title {
     color: white;
-    font-size: 30pt;
+    font-size: 28pt;
+    margin-bottom: 0.5rem;
+    font-family: 'Sora-Medium';
 }
 .intro__about {
     font-size: 16pt;
@@ -117,7 +120,7 @@ padding: 5rem 5%;
     display: grid;
     grid-template-columns:700px 700px;
     grid-template-rows: auto auto;
-    gap: 10%;
+    gap: 5rem;
     justify-content: center;
     margin-top: 2rem;
     margin-bottom: 5rem;
@@ -128,7 +131,7 @@ padding: 5rem 5%;
     display: grid;
     justify-content: flex-start;
     background-color: var(--off-black);
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
     height:350px;
 }
 
@@ -136,7 +139,7 @@ padding: 5rem 5%;
 .project__list-text {
     /* padding: 1rem 0 0 1rem; */
     color: var(--white);
-    font-size: 60px;
+    font-size: 8rem;
     font-family: 'Sora-Bold';
 }
 
@@ -188,7 +191,7 @@ padding: 5rem 5%;
     position: absolute;
     z-index: -200;
     object-fit: cover;
-    height: 40vh;
+    height: 50vh;
     filter: grayscale(10);
     transform: scale (0.7);
     overflow: hidden;
