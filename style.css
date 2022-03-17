@@ -266,8 +266,16 @@ mark {
 
 
 .resume__btn {
-    background-color: var(--white);
-    color: var(--white);
+    background-color: var(--green);
+    border: solid 1px;
+    padding: 15px 32px;
+    text-align: center;
+}
+.resume__btn:hover {
+    box-shadow:0 5px 5px, 0 0 5px inset;
+    color: var(--off-black) 0.5;
+}
+.resume__btn--deco {
     text-decoration: none;
 }
 /*footer*/
