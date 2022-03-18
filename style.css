@@ -161,7 +161,7 @@ h5 {
 }
 .project-home__card:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 .project-home__card--collider:hover {
     background-image: url("images/collider/colliderthumb.png");
@@ -237,11 +237,25 @@ h5 {
 }
 /* all images for now*/
 .project__img {
-    max-width: 100%;
+    width:100%;
+display:block;
+margin:auto;
+text-align: center;
 }
 
-.project__img--margin {
-    margin-top: 1rem;
+.project__img--custom-1 {
+    margin: 2rem 0;
+}
+
+.project__img--custom-flex{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.project__img--tall-resize {
+max-width: 50%;
+margin: 0 auto;
 }
 
 @media screen and (max-width: 320px) {
