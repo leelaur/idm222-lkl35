@@ -142,6 +142,7 @@ h5 {
 
 .project-home__card {
     background-color: var(--off-black);
+    min-height: 300px;
 }
 .project-home__card-text {
     /* padding: 1rem 0 0 1rem; */
@@ -164,21 +165,25 @@ h5 {
 }
 .project-home__card--collider:hover {
     background-image: url("images/collider/colliderthumb.png");
+    background-size: 500px 400px;
 }
 .project-home__card--excel:hover {
-    background-image: url("images/heading/excelheading.png");
+    background-image: url("images/excel/excelthumb.png");
+    background-size: 500px 400px;
 }
 .project-home__card--wallet:hover {
-    background-image: url("images/heading/walletheading.png");
+    background-image: url("images/wallet/walletthumb.png");
+    background-size: 500px 400px;
 }
 .project-home__card--coolmath:hover {
-    background-image: url("images/heading/coolmathheading.png");
+    background-image: url("images/coolmath/coolmaththumb.png");
+    background-size: 500px 400px;
 }
 @media screen and (max-width: 1100px) {
     .project-home__grid {
         display: grid;
         grid-template-columns: 1fr;
-        grid-row: 1fr 1fr 1fr 1fr;
+        /* grid-row: 1fr 1fr 1fr 1fr; */
     }
 }
 
@@ -274,7 +279,13 @@ h5 {
 .resume__paper {
     display: flex;
     flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
 }
+.resume__top {
+    text-align: center;
+}
+
 mark {
     background-color: var(--green);
     color: var(--black);
@@ -296,31 +307,58 @@ mark {
 }
 
 .resume__section { 
-    margin-top: 2rem;
+    margin: 2rem 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     align-content: center;
+    line-height: 1.5;
+    /* display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 2rem 0; */
 }
-
 .resume__content{
+    align-content: flex-start;
     justify-content: flex-end;
-    padding-left:3rem;
+
+}
+.resume__section-title {
+    margin-bottom: 1.5rem;
+}
+.resume__content--space {
+    margin-bottom: 1.5rem;
+}
+
+.resume__content-list-item {
+    margin-left: 2rem;
 }
 
 
+
+@media screen and (max-width: 1100px) {
+    .resume__section {
+        display: flex;
+        flex-direction: column;
+    }
+}
 .resume__btn {
     background-color: var(--green);
     border: solid 1px;
     padding: 15px 32px;
-    text-align: center;
+    display: block;
+    margin: 0 auto;
 }
 .resume__btn:hover {
-    box-shadow:0 5px 5px, 0 0 5px inset;
-    color: var(--off-black) 0.5;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    color: var(--off-black) 1;
 }
 .resume__btn--deco {
     text-decoration: none;
+    color: var(--off-black);
+}
+.resume__btn--space {
+    margin: 2rem 0;
 }
 /*footer*/
 main {
