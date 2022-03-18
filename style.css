@@ -164,19 +164,19 @@ h5 {
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 .project-home__card--collider:hover {
-    background-image: url("images/collider/colliderthumb.png");
+    background-image: url("images/collider/colliderthumb.jpg");
     background-size: 500px 400px;
 }
 .project-home__card--excel:hover {
-    background-image: url("images/excel/excelthumb.png");
+    background-image: url("images/excel/excelthumb.jpg");
     background-size: 500px 400px;
 }
 .project-home__card--wallet:hover {
-    background-image: url("images/wallet/walletthumb.png");
+    background-image: url("images/wallet/walletthumb.jpg");
     background-size: 500px 400px;
 }
 .project-home__card--coolmath:hover {
-    background-image: url("images/coolmath/coolmaththumb.png");
+    background-image: url("images/coolmath/coolmaththumb.jpg");
     background-size: 500px 400px;
 }
 @media screen and (max-width: 1100px) {
@@ -256,6 +256,7 @@ text-align: center;
 .project__img--tall-resize {
 max-width: 50%;
 margin: 0 auto;
+padding: 2rem 0;
 }
 
 @media screen and (max-width: 320px) {
@@ -373,6 +374,38 @@ mark {
 }
 .resume__btn--space {
     margin: 2rem 0;
+}
+
+/* about page */
+.about__wrapper {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width: 1000px) {
+    .about__wrapper {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about__img {
+        margin-bottom: 2rem;
+        object-fit: cover;
+        
+        
+    }
+
+}
+.about__img {
+    max-width: 400px;
+    max-height: 500px;
+    margin-right: 2rem;
+}
+.about__text{
+    margin-bottom: 3rem;
+    font-size: 14pt;
+    line-height: 1.5;
 }
 /*footer*/
 main {
