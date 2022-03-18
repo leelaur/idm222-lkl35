@@ -136,7 +136,6 @@ h5 {
     margin-top: 2rem;
     margin-bottom: 5rem;
     width: 100%;
-    transition-timing-function: 1s ease-in-out;
     /* text-decoration: none; */
 }
 
@@ -147,8 +146,9 @@ h5 {
 .project-home__card-text {
     /* padding: 1rem 0 0 1rem; */
     color: var(--white);
-    font-size: 32px;
+    font-size: 50px;
     font-family: 'Sora-Bold';
+    padding-left: 1rem;
 }
 
 .project-home__card--link {
@@ -161,23 +161,24 @@ h5 {
 }
 .project-home__card:hover {
     transform: scale(1.1);
+    transition-timing-function: ease-in-out;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 .project-home__card--collider:hover {
     background-image: url("images/collider/colliderthumb.jpg");
-    background-size: 500px 400px;
+    background-size: 800px 600px;
 }
 .project-home__card--excel:hover {
     background-image: url("images/excel/excelthumb.jpg");
-    background-size: 500px 400px;
+    background-size: 800px 600px;
 }
 .project-home__card--wallet:hover {
     background-image: url("images/wallet/walletthumb.jpg");
-    background-size: 500px 400px;
+    background-size: 800px 600px;
 }
 .project-home__card--coolmath:hover {
     background-image: url("images/coolmath/coolmaththumb.jpg");
-    background-size: 500px 400px;
+    background-size: 800px 600px;
 }
 @media screen and (max-width: 1100px) {
     .project-home__grid {
@@ -377,6 +378,18 @@ mark {
 }
 
 /* about page */
+
+.about__img {
+    max-width: 400px;
+    max-height: 500px;
+    margin-right: 2rem;
+}
+.about__text{
+    margin-bottom: 3rem;
+    font-size: 14pt;
+    line-height: 1.5;
+}
+
 .about__wrapper {
     margin-top: 2rem;
     display: flex;
@@ -390,22 +403,33 @@ mark {
         justify-content: center;
     }
     .about__img {
-        margin-bottom: 2rem;
+        margin: 0 0 2rem 0;
         object-fit: cover;
         
         
     }
+}
+/* transition */
+.slide-in {
+    animation: slidein 2s;
+}
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+}
 
-}
-.about__img {
-    max-width: 400px;
-    max-height: 500px;
-    margin-right: 2rem;
-}
-.about__text{
-    margin-bottom: 3rem;
-    font-size: 14pt;
-    line-height: 1.5;
+/* heading 320px */
+@media screen and (max-width: 320px) {
+    .about__img {
+        background-image: url('images/heading/aboutheading320.png');
+    }
 }
 /*footer*/
 main {
@@ -444,7 +468,7 @@ footer {
 }
 
 .social__img--size {
-    height: 50%;
+    height: 70%;
 }
 .social__list-item {
     color: var(--green);
